@@ -174,3 +174,16 @@ Digest: sha256:d7262c0f29a26349d6af45199b2770d499c74d45cee5c47995a1ebb336093088
 Status: Downloaded newer image for httpd:latest
 docker.io/library/httpd:latest
 bence@bence-VM:~$ 
+
+----------------------------------------
+
+bence@bence-VM:~$ sudo docker run -d --name web-server -p 80:80 -d httpd
+[sudo] password for bence: 
+232743d6d82c00ea2a14ed368b28b1f96f885311f768b10db4508fe2402cd6d6
+
+
+bence@bence-VM:~$ sudo docker update --restart always web-server
+web-server
+----------------------------------------
+
+
